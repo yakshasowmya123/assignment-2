@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="index.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    .song-card {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .song-card:hover {
+      transform: scale(1.05);
+    }
+   
+  </style>
+</head>
+<body>
+  <div class="main-box">
+    <!-- Header -->
+    <div class="header">
+      <div class="hc1">
+        <div class="hc11"><i class="fa-brands fa-spotify brand"></i><span>Spotify</span></div>
+        <div class="hc12"><i class="fa-solid fa-house home"></i> Home</div>
+        <div class="hc13">
+          <div class="hc131"><i class="fa-solid fa-magnifying-glass search"></i></div>
+          <div class="hc132">
+            <input type="search" class="ip-ser" placeholder="What do you want to listen to?" />
+          </div>
+          <div class="hc133"><i class="fa-solid fa-window-restore"></i></div>
+        </div>
+      </div>
+      <div class="hc2">
+        <div class="hc21">
+          <a href="#">Premium</a>
+          <a href="#">Support</a>
+          <a href="#">Download</a>
+        </div>
+        <div class="bar"></div>
+        <div class="hc22"><button><i class="fa-solid fa-download"></i> Install App</button></div>
+        <div class="hc23"><button class="signup">Sign up</button></div>
+        <div class="hc24"><button class="login">Log in</button></div>
+      </div>
+    </div>
+
+    <!-- Scrollable Songs Section -->
+    <div class="songs-section">
+      <h2>Trending Now</h2>
+      <div class="song-scroll">
+        <div class="song-card" data-src="https://res.cloudinary.com/dsg7aimdr/video/upload/v1749803660/Prema_Velluva_lqkzyb.mp3" data-img="https://c.saavncdn.com/133/Prema-Velluva-From-Hit-3-Telugu-Telugu-2025-20250323083324-500x500.jpg">
+          <img src="https://c.saavncdn.com/133/Prema-Velluva-From-Hit-3-Telugu-Telugu-2025-20250323083324-500x500.jpg" alt="HIT 3 Cover">
+          <p class="song-title">Prema Velluva</p>
+          <p class="artist-name">Sid Sriram</p>
+        </div>
+        <div class="song-card" data-src="https://res.cloudinary.com/dsg7aimdr/video/upload/v1749803616/09-Bus-Love-Pt-2-MassTamilan.com_sfkzki.mp3" data-img="https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/24/df/3f/24df3fc4-c1e9-29c3-979b-6316b8a7299b/cover.jpg/800x800cc.jpg">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/24/df/3f/24df3fc4-c1e9-29c3-979b-6316b8a7299b/cover.jpg/800x800cc.jpg" alt="Poli Sodu Cover">
+          <p class="song-title">Bus Love 2</p>
+          <p class="artist-name">G. V. Prakash Kumar</p>
+        </div>
+        <div class="song-card" data-src="https://res.cloudinary.com/dsg7aimdr/video/upload/v1749801965/v6qwtd4sdcgzjvb1ybyo.mp3" data-img="https://upload.wikimedia.org/wikipedia/en/2/28/Ala_Vaikunthapurramuloo.jpeg">
+          <img src="https://upload.wikimedia.org/wikipedia/en/2/28/Ala_Vaikunthapurramuloo.jpeg" alt="Samajavaragamana" />
+          <p class="song-title">Samajavaragamana</p>
+          <p class="artist-name">Sid Sriram</p>
+        </div>
+
+        <div class="song-card" data-src="https://res.cloudinary.com/dsg7aimdr/video/upload/v1749802490/Oo_Antava_Oo_Oo_Antava_qion61.mp3" data-img="https://i.scdn.co/image/ab67616d0000b273fccff1abeed5dd492bf1aeb1">
+          <img src="https://i.scdn.co/image/ab67616d0000b273fccff1abeed5dd492bf1aeb1" alt="Oo Antava Oo Oo Antava" />
+          <p class="song-title">Oo Antava</p>
+          <p class="artist-name">Indravathi Chauhan</p>
+        </div>
+
+        <div class="song-card" data-src="https://res.cloudinary.com/dsg7aimdr/video/upload/v1749802493/3.Jai_Balayya_fwnvta.mp3" data-img="https://i.scdn.co/image/ab67616d0000b2732e28792daa2312a2cb6e0189">
+          <img src="https://i.scdn.co/image/ab67616d0000b2732e28792daa2312a2cb6e0189" alt="Jai Balayya" />
+          <p class="song-title">Jai Balayya</p>
+          <p class="artist-name">Karthik</p>
+        </div>
+        
+        <div class="song-card" data-src="https://res.cloudinary.com/dsg7aimdr/video/upload/v1749802507/Inkem_Inkem_Inkem_Kaavaale_-_SenSongsMp3.Co_ydypjr.mp3" data-img="https://a10.gaanacdn.com/gn_img/song/koMWQ7BKqL/MWQBR7EEbq/size_m_1531202221.jpg">
+          <img src="https://a10.gaanacdn.com/gn_img/song/koMWQ7BKqL/MWQBR7EEbq/size_m_1531202221.jpg" alt="Inkem Inkem Inkem Kaavaale" />
+          <p class="song-title">Inkem Inkem</p>
+          <p class="artist-name">Sid Sriram</p>
+        </div>
+
+        <div class="song-card" data-src="https://res.cloudinary.com/dsg7aimdr/video/upload/v1749802533/Neeli_Neeli_Aakasam_-_SenSongsMp3.Co_kdlqbz.mp3" data-img="https://i.scdn.co/image/ab67616d0000b2739c3e5470ae7da921d7653981">
+          <img src="https://i.scdn.co/image/ab67616d0000b2739c3e5470ae7da921d7653981" alt="Neeli Neeli Aakasam" />
+          <p class="song-title">Neeli Neeli Aakasam</p>
+          <p class="artist-name">Sid Sriram</p>
+        </div>
+
+        <div class="song-card" data-src="https://res.cloudinary.com/dsg7aimdr/video/upload/v1749802482/02_-_Hey_Idi_Nenena_-_SenSongsmp3.Co_cyzv1o.mp3" data-img="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b8/1e/13/b81e1332-54ad-35d6-f109-9e0cd34084ea/886448734499.jpg/1200x630bb.jpg">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b8/1e/13/b81e1332-54ad-35d6-f109-9e0cd34084ea/886448734499.jpg/1200x630bb.jpg" alt="Hey Idi Nenena" />
+          <p class="song-title">Hey Idi Nenena</p>
+          <p class="artist-name">Anurag Kulkarni</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div id="audio-player-container">
+    <div class="player-info">
+      <img id="current-song-img" src="" alt="Current song">
+      <div class="song-details">
+        <div class="song-title" id="current-song-title">No song selected</div>
+        <div class="artist-name" id="current-song-artist"></div>
+      </div>
+    </div>
+    
+    <div class="player-controls">
+      <div class="player-buttons">
+        <button class="shuffle"><i class="fas fa-random"></i></button>
+        <button class="prev"><i class="fas fa-step-backward"></i></button>
+        <button class="play-pause"><i class="fas fa-play"></i></button>
+        <button class="next"><i class="fas fa-step-forward"></i></button>
+        <button class="repeat"><i class="fas fa-redo"></i></button>
+      </div>
+      
+      <div class="waveform-container">
+        <div class="progress-bar"></div>
+        <div class="waveform" id="waveform"></div>
+      </div>
+    </div>
+    
+    <div class="player-volume">
+      <button class="volume-icon"><i class="fas fa-volume-up"></i></button>
+      <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
+    </div>
+    
+    <audio id="audio-player"></audio>
+  </div>
+
+  <script>
+    const cards = document.querySelectorAll(".song-card");
+    const player = document.getElementById("audio-player");
+    const playPauseBtn = document.querySelector(".play-pause");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    const progressBar = document.querySelector(".progress-bar");
+    const volumeSlider = document.querySelector(".volume-slider");
+    const volumeIcon = document.querySelector(".volume-icon");
+    const waveform = document.getElementById("waveform");
+    const currentSongImg = document.getElementById("current-song-img");
+    const currentSongTitle = document.getElementById("current-song-title");
+    const currentSongArtist = document.getElementById("current-song-artist");
+    
+    let currentlyPlaying = null;
+    let isPlaying = false;
+    let waveBars = [];
+    let animationId = null;
+    let progressId = null;
+    
+    function createWaveform() {
+      waveform.innerHTML = '';
+      waveBars = [];
+      
+      for (let i = 0; i < 100; i++) {
+        const bar = document.createElement("div");
+        bar.className = "wave-bar";
+  
+        const height = Math.random() * 80 + 10;
+        bar.style.height = `${height}%`;
+        waveform.appendChild(bar);
+        waveBars.push(bar);
+      }
+    }
+    
+  
+    createWaveform();
+    
+
+    function animateWaveform() {
+ 
+      if (animationId) {
+        cancelAnimationFrame(animationId);
+      }
+      
+      function animate() {
+        if (!isPlaying) return;
+        
+   
+        waveBars.forEach((bar, index) => {
+          if (Math.random() > 0.7) {
+            const height = Math.random() * 80 + 10;
+            bar.style.height = `${height}%`;
+          }
+        });
+        
+        animationId = requestAnimationFrame(animate);
+      }
+      
+      animate();
+    }
+
+    function updateProgress() {
+  
+      if (progressId) {
+        cancelAnimationFrame(progressId);
+      }
+      
+      function update() {
+        if (player.duration) {
+          const progress = (player.currentTime / player.duration) * 100;
+          progressBar.style.width = `${progress}%`;
+        }
+        
+        if (isPlaying) {
+          progressId = requestAnimationFrame(update);
+        }
+      }
+      
+      update();
+    }
+    
+    playPauseBtn.addEventListener("click", () => {
+      if (currentlyPlaying) {
+        if (isPlaying) {
+          player.pause();
+          playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+          isPlaying = false;
+        } else {
+          player.play().then(() => {
+            playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+            isPlaying = true;
+            animateWaveform();
+            updateProgress();
+          });
+        }
+      }
+    });
+    
+    volumeSlider.addEventListener("input", () => {
+      player.volume = volumeSlider.value;
+
+      if (volumeSlider.value == 0) {
+        volumeIcon.innerHTML = '<i class="fas fa-volume-mute"></i>';
+      } else if (volumeSlider.value < 0.5) {
+        volumeIcon.innerHTML = '<i class="fas fa-volume-down"></i>';
+      } else {
+        volumeIcon.innerHTML = '<i class="fas fa-volume-up"></i>';
+      }
+    });
+    
+    waveform.addEventListener("click", (e) => {
+      if (player.duration) {
+        const rect = waveform.getBoundingClientRect();
+        const clickPosition = (e.clientX - rect.left) / rect.width;
+        player.currentTime = clickPosition * player.duration;
+        
+
+        progressBar.style.width = `${clickPosition * 100}%`
+        if (isPlaying) {
+          animateWaveform();
+          updateProgress();
+        }
+      }
+    });
+
+    cards.forEach(card => {
+      card.addEventListener("click", () => {
+        const songSrc = card.getAttribute("data-src");
+        const songImg = card.getAttribute("data-img");
+        const songTitle = card.querySelector(".song-title").textContent;
+        const songArtist = card.querySelector(".artist-name").textContent;
+ 
+        if (currentlyPlaying === card && isPlaying) {
+          player.pause();
+          isPlaying = false;
+          playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+          return;
+        }
+        
+
+        currentSongImg.src = songImg;
+        currentSongTitle.textContent = songTitle;
+        currentSongArtist.textContent = songArtist;
+    
+        player.src = songSrc;
+        player.play().then(() => {
+          isPlaying = true;
+          currentlyPlaying = card;
+          playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+          
+          animateWaveform();
+          updateProgress();
+          
+          cards.forEach(c => c.style.border = "none");
+          card.style.border = "2px solid #1DB954"; 
+        });
+      });
+    });
+
+    player.addEventListener("ended", () => {
+      if (currentlyPlaying) {
+        currentlyPlaying.style.border = "none";
+        playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+        isPlaying = false;
+        currentlyPlaying = null;
+      }
+    });
+    
+
+    player.volume = volumeSlider.value;
+  </script>
+</body>
+</html>

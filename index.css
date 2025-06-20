@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+.main-box {
+  width: 97%;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+}
+
+.songs-section {
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.songs-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.song-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+.song-card {
+  min-width: 150px;
+  background-color: #181818;
+  border-radius: 10px;
+  padding: 10px;
+  flex-shrink: 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.song-card:hover {
+  transform: scale(1.05);
+  background-color: #282828;
+}
+
+.song-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.song-title {
+  font-weight: bold;
+  margin: 10px 0 4px;
+  font-size: 1rem;
+}
+
+.artist-name {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+ audio {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #1db954;
+    }
+
+audio {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+  outline: none;
+}
+
+#audio-player-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #282828;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 100;
+  height: 80px;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  min-width: 200px;
+}
+
+.player-info img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.song-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-details .song-title {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.song-details .artist-name {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.player-controls {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.player-buttons button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.player-buttons .play-pause {
+  font-size: 1.5rem;
+}
+
+.waveform-container {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.waveform {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.wave-bar {
+  width: 2px;
+  background-color: #1db954;
+  transition: height 0.1s ease;
+  flex-shrink: 0;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10%;
+  background-color: rgba(0, 171, 57, 0.3);
+  width: 0;
+  z-index: -1;
+}
+
+.player-volume {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.volume-slider {
+  width: 100px;
+  -webkit-appearance: none;
+  height: 4px;
+  background: #535353;
+  border-radius: 2px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.hc1, .hc2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hc11 {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1db954;
+  gap: 8px;
+}
+
+.hc12 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.hc13 {
+  display: flex;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.hc131, .hc133 {
+  color: #aaa;
+  padding: 0 8px;
+}
+
+.hc132 input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 200px;
+}
+
+.hc21 a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.bar {
+  width: 1px;
+  height: 20px;
+  background-color: #555;
+}
+
+.hc22 button {
+  background-color: #282828;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hc23 button,
+.hc24 button {
+  background: none;
+  color: white;
+  border: 1px solid #1db954;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hc23 button:hover,
+.hc24 button:hover {
+  background-color: #1db954;
+  color: black;
+}
